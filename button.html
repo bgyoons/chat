@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .container {
+            margin: 30%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="nickname">닉네임은 여기에!</div>
+        <button onclick="show()">닉네임을 맞춰보세요</button>
+    </div>
+
+    <script>
+        let name = document.getElementById("nickname");
+        let myName = ["배", "균"];
+        let putName = "";
+        let i = 0;
+
+        function show() {
+            if (i < myName.length) {
+                putName += myName[i];
+                name.innerHTML = putName;
+                i++;
+            } else {
+                i = 0;
+                putName += ",";
+                name.innerHTML = putName;
+            }
+        };
+    </script>
+</body>
+</html>
