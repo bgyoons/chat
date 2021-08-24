@@ -20,6 +20,12 @@ function chatting() {
         } else {
             txt.innerHTML = "지금은 " + "오전 " + hour + "시 " + min + "분 이에요 냥";
         }
+    } else if (inputvalue.includes("켜줘")) {
+        document.body.style.backgroundColor = '#ffffff'
+        txt.innerHTML = "불 켰다!";
+    } else if (inputvalue.includes("꺼줘")) {
+        document.body.style.backgroundColor = '#000000'
+        txt.innerHTML = "불 껐다!";
     } else {
         txt.innerHTML = "무슨 말있지 모르겠다 냥"
     }
