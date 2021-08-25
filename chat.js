@@ -1,7 +1,9 @@
 var txt = document.getElementById("reply");
+let n;
 
 function chatting() {
     var inputvalue = document.getElementById("console").value;
+
     if (inputvalue.includes("안녕")) {
         txt.innerHTML = "저도 반가워요 냥";
     } else if (inputvalue.includes("며칠")) {
@@ -26,9 +28,22 @@ function chatting() {
     } else if (inputvalue.includes("꺼줘")) {
         document.body.style.backgroundColor = '#000000'
         txt.innerHTML = "불 껐다!";
+    } else if (inputvalue.includes("따라해")) {
+        n = 0;
+        if (n == 0) {
+            txt.innerHTML = "따라하기 시작! 냥!";
+            n++;
+        }
+    } else if (n == 1) {
+        txt.innerHTML = `${inputvalue}! 냥!`;
+        if (inputvalue.includes("그만해 냥!")) {
+            txt.innerHTML = "알겠다 냥!";
+            n = 0;
+        }
     } else {
         txt.innerHTML = "무슨 말있지 모르겠다 냥"
     }
+    console.log(inputvalue, n);
     document.getElementById("console").value = '';
 }
 document.getElementById("button").addEventListener('click', chatting);
