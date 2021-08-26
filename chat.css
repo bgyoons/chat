@@ -13,12 +13,15 @@ body {
     color: rgb(125, 125, 187);
     background-color: white;
 }
+.container{
+    margin: 10% auto 30px auto;
+}
 .reply {
     border: 1px solid rgb(125, 125, 187);
     border-radius: 5px;
     width: 50%;
     height: 100px;
-    margin: 10% auto 30px auto;
+    margin: 10px auto 30px auto;
     line-height: 100px;
 }
 img {

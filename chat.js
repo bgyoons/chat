@@ -3,6 +3,7 @@ let n;
 
 function chatting() {
     var inputvalue = document.getElementById("console").value;
+    var app = document.getElementById('app');
 
     if (inputvalue.includes("안녕")) {
         txt.innerHTML = "저도 반가워요 냥";
@@ -41,7 +42,16 @@ function chatting() {
             n = 0;
         }
     } else {
-        txt.innerHTML = "무슨 말있지 모르겠다 냥"
+        txt.innerHTML = "ZZZ 졸리다 냥";
+        var typewriter = new Typewriter(app, {
+            loop: true
+        });
+        typewriter.typeString('고양이가 말을 알아듣지 못한 것 같다.')
+            .pauseFor(1300)
+            .deleteAll()
+            .typeString('다시 한 번 말해보세요.')
+            .pauseFor(4000)
+            .start();
     }
     console.log(inputvalue, n);
     document.getElementById("console").value = '';
