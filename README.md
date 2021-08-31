@@ -22,6 +22,14 @@ https://user-images.githubusercontent.com/73841260/129770972-ebb39021-c9e1-4e46-
    
 
 https://user-images.githubusercontent.com/73841260/130964123-458a10ee-3cef-440d-b1f6-774e31037288.mov
+   
+    <li>
+    <h4>21.08.31 JSON 사용해서 고양이한테 대답 가르치기</h4>
+      
+
+https://user-images.githubusercontent.com/73841260/131486993-24462bb6-2a3d-402c-9395-ad5f3951c88d.mov
+
+
 
 
 
